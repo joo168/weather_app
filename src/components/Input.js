@@ -17,7 +17,7 @@ const Input = ({ city, onChangeCity, getWeather, result }) => {
           value={city}
           onChange={onChange}
           placeholder="city.."
-          autocomplete="off"
+          autoComplete="off"
         />
         <button type="submit">Get Weather!</button>
       </form>
