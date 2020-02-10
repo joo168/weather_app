@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Input = ({ city, onChangeCity, getWeather, result }) => {
+const Input = ({ city, onChangeCity, getWeather }) => {
   const onSubmit = e => {
     e.preventDefault();
     getWeather(city);
@@ -21,7 +21,6 @@ const Input = ({ city, onChangeCity, getWeather, result }) => {
         />
         <button type="submit">Get Weather!</button>
       </form>
-      {result}
     </div>
   );
 };

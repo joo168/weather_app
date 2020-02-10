@@ -3,14 +3,9 @@ import { connect } from 'react-redux';
 import { changeCity, getWeather } from '../modules/weather';
 import Input from '../components/Input';
 
-const InputContainer = ({ changeCity, city, getWeather, result }) => {
+const InputContainer = ({ changeCity, city, getWeather }) => {
   return (
-    <Input
-      onChangeCity={changeCity}
-      city={city}
-      getWeather={getWeather}
-      result={result}
-    />
+    <Input onChangeCity={changeCity} city={city} getWeather={getWeather} />
   );
 };
 
